@@ -70,11 +70,3 @@ vim.api.nvim_create_user_command(
     {range = false, nargs = 0}
 )
 
-
---vim.api.nvim_set_keymap('n', '<leader>.<Space>', ':UnicaDiv<CR>', {noremap = true, silent = true})
---vim.api.nvim_set_keymap('n', '<leader>.t', ':UnicaH1<CR>', {noremap = true, silent = true})
-vim.api.nvim_set_keymap('', '<leader>1', ':UnicaH1<CR>', {noremap = true, silent = true})
-vim.api.nvim_set_keymap('', '<leader>2', ':UnicaH2<CR>', {noremap = true, silent = true})
-vim.api.nvim_set_keymap('', '<leader>3', ':UnicaH3<CR>', {noremap = true, silent = true})
---vim.api.nvim_set_keymap('i', '<C-=>', '<ESC>:r!date "+\\%Y-\\%m-\\%d"<CR>', {noremap = true, silent = true})
---vim.api.nvim_set_keymap('n', '<leader>.d', ':r!date "+\\%Y-\\%m-\\%d"<CR>', {noremap = true, silent = true})
