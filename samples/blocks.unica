@@ -1,0 +1,83 @@
+┌──────────────────────────────────────────────────────────────────────────────────────────────────┐
+│ local function unica_h1_add(startLine, endLine)                                                  │
+│     local prependText = "===["                                                                   │
+│     local appendText = "]==="                                                                    │
+│     local textwidth = vim.bo.textwidth                                                           │
+│                                                                                                  │
+│     -- Ensure startLine and endLine are within valid bounds                                      │
+│     local lineCount = vim.api.nvim_buf_line_count(0)                                             │
+│     startLine = math.max(1, startLine)                                                           │
+│     endLine = math.min(lineCount, endLine)                                                       │
+│                                                                                                  │
+│     -- Iterate through each line in the range and modify it                                      │
+│     for lineNr = startLine, endLine do                                                           │
+│         local line = vim.api.nvim_buf_get_lines(0, lineNr-1, lineNr, false)[1]                   │
+│         line = prependText .. line .. appendText                                                 │
+│         vim.api.nvim_buf_set_lines(0, lineNr-1, lineNr, false, {line})                           │
+│     end                                                                                          │
+│ end                                                                                              │
+└──────────────────────────────────────────────────────────────────────────────────────────────────┘
+ 
+┌┤████████████████████████████████████  unica.lua    █████████████████████████████████████████████├┐
+│                                                                                                  │
+│ local function unica_h1_add(startLine, endLine)                                                  │
+│     local prependText = "===["                                                                   │
+│     local appendText = "]==="                                                                    │
+│     local textwidth = vim.bo.textwidth                                                           │
+│                                                                                                  │
+│     -- Ensure startLine and endLine are within valid bounds                                      │
+│     local lineCount = vim.api.nvim_buf_line_count(0)                                             │
+│     startLine = math.max(1, startLine)                                                           │
+│     endLine = math.min(lineCount, endLine)                                                       │
+│                                                                                                  │
+│     -- Iterate through each line in the range and modify it                                      │
+│     for lineNr = startLine, endLine do                                                           │
+│         local line = vim.api.nvim_buf_get_lines(0, lineNr-1, lineNr, false)[1]                   │
+│         line = prependText .. line .. appendText                                                 │
+│         vim.api.nvim_buf_set_lines(0, lineNr-1, lineNr, false, {line})                           │
+│     end                                                                                          │
+│ end                                                                                              │
+└──────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌────────────────────────────────────┤  unica.lua    ├─────────────────────────────────────────────┐
+│                                                                                                  │
+│ local function unica_h1_add(startLine, endLine)                                                  │
+│     local prependText = "===["                                                                   │
+│     local appendText = "]==="                                                                    │
+│     local textwidth = vim.bo.textwidth                                                           │
+│                                                                                                  │
+│     -- Ensure startLine and endLine are within valid bounds                                      │
+│     local lineCount = vim.api.nvim_buf_line_count(0)                                             │
+│     startLine = math.max(1, startLine)                                                           │
+│     endLine = math.min(lineCount, endLine)                                                       │
+│                                                                                                  │
+│     -- Iterate through each line in the range and modify it                                      │
+│     for lineNr = startLine, endLine do                                                           │
+│         local line = vim.api.nvim_buf_get_lines(0, lineNr-1, lineNr, false)[1]                   │
+│         line = prependText .. line .. appendText                                                 │
+│         vim.api.nvim_buf_set_lines(0, lineNr-1, lineNr, false, {line})                           │
+│     end                                                                                          │
+│ end                                                                                              │
+└──────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌──┤ unica.lua ├───────────────────────────────────────────────────────────────────────────────────┐
+│                                                                                                  │
+│ local function unica_h1_add(startLine, endLine)                                                  │
+│     local prependText = "===["                                                                   │
+│     local appendText = "]==="                                                                    │
+│     local textwidth = vim.bo.textwidth                                                           │
+│                                                                                                  │
+│     -- Ensure startLine and endLine are within valid bounds                                      │
+│     local lineCount = vim.api.nvim_buf_line_count(0)                                             │
+│     startLine = math.max(1, startLine)                                                           │
+│     endLine = math.min(lineCount, endLine)                                                       │
+│                                                                                                  │
+│     -- Iterate through each line in the range and modify it                                      │
+│     for lineNr = startLine, endLine do                                                           │
+│         local line = vim.api.nvim_buf_get_lines(0, lineNr-1, lineNr, false)[1]                   │
+│         line = prependText .. line .. appendText                                                 │
+│         vim.api.nvim_buf_set_lines(0, lineNr-1, lineNr, false, {line})                           │
+│     end                                                                                          │
+│ end                                                                                              │
+└──────────────────────────────────────────────────────────────────────────────────────────────────┘
+

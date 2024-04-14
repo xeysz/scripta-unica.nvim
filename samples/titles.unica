@@ -1,0 +1,144 @@
+Hello text string my old friend
+───────────────────────────────
+Underline box diagram
+
+H͟e͟l͟l͟o͟ ͟t͟e͟x͟t͟ ͟s͟t͟r͟i͟n͟g͟ ͟m͟y͟ ͟o͟l͟d͟ ͟f͟r͟i͟e͟n͟d͟.͟
+Underline double macron
+
+H̳e̳l̳l̳o̳ ̳t̳e̳x̳t̳ ̳s̳t̳r̳i̳n̳g̳ ̳m̳y̳ ̳o̳l̳d̳ ̳f̳r̳i̳e̳n̳d̳.̳
+Double underline
+
+H̲e̲l̲l̲o̲ ̲t̲e̲x̲t̲ ̲s̲t̲r̲i̲n̲g̲ ̲m̲y̲ ̲o̲l̲d̲ ̲f̲r̲i̲e̲n̲d̲.̲
+Underline (lowline)
+
+H͢e͢l͢l͢o͢ ͢t͢e͢x͢t͢ ͢s͢t͢r͢i͢n͢g͢ ͢m͢y͢ ͢o͢l͢d͢ ͢f͢r͢i͢e͢n͢d͢.͢
+Under arrow
+
+H̼e̼l̼l̼o̼ ̼t̼e̼x̼t̼ ̼s̼t̼r̼i̼n̼g̼ ̼m̼y̼ ̼o̼l̼d̼ ̼f̼r̼i̼e̼n̼d̼.̼
+Under seagull
+
+━━━┫ Unicode ┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Unicode, formally The Unicode Standard,[note 1] is a text encoding standard maintained by the
+Unicode Consortium designed to support the use of text written in all of the world's major writing
+systems. Version 15.1 of the standard[A] defines 149813 characters[3] and 161 scripts used in
+various ordinary, literary, academic, and technical contexts.
+
+Many common characters, including numerals, punctuation, and other symbols, are unified within the
+standard and are not treated as specific to any given writing system. Unicode encodes thousands of
+emoji, with the continued development thereof conducted by the Consortium as a part of the
+standard.[4] Moreover, the widespread adoption of Unicode was in large part responsible for the
+initial popularization of emoji outside of Japan. Unicode is ultimately capable of encoding more
+than 1.1 million characters.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫ One line title ┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Section text
+Section text
+Section text
+
+━━━┫ Two lines ┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   ┃ title     ┃
+
+Section text
+Section text
+Section text
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫ Two lines ┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+                                     ┃ title     ┃
+
+Section text
+Section text
+Section text
+
+━━━┫ Three ┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   ┃ lines ┃
+   ┃ title ┃
+
+Section text
+Section text
+Section text
+
+████ Unicode ███████████████████████████████████████████████████████████████████████████████████████
+
+Unicode, formally The Unicode Standard,[note 1] is a text encoding standard maintained by the
+Unicode Consortium designed to support the use of text written in all of the world's major writing
+systems. Version 15.1 of the standard[A] defines 149813 characters[3] and 161 scripts used in
+various ordinary, literary, academic, and technical contexts.
+
+Many common characters, including numerals, punctuation, and other symbols, are unified within the
+standard and are not treated as specific to any given writing system. Unicode encodes thousands of
+emoji, with the continued development thereof conducted by the Consortium as a part of the
+standard.[4] Moreover, the widespread adoption of Unicode was in large part responsible for the
+initial popularization of emoji outside of Japan. Unicode is ultimately capable of encoding more
+than 1.1 million characters.
+
+██████████████████████████████████████  Unicode    █████████████████████████████████████████████████
+
+Unicode, formally The Unicode Standard,[note 1] is a text encoding standard maintained by the
+Unicode Consortium designed to support the use of text written in all of the world's major writing
+systems. Version 15.1 of the standard[A] defines 149813 characters[3] and 161 scripts used in
+various ordinary, literary, academic, and technical contexts.
+
+Many common characters, including numerals, punctuation, and other symbols, are unified within the
+standard and are not treated as specific to any given writing system. Unicode encodes thousands of
+emoji, with the continued development thereof conducted by the Consortium as a part of the
+standard.[4] Moreover, the widespread adoption of Unicode was in large part responsible for the
+initial popularization of emoji outside of Japan. Unicode is ultimately capable of encoding more
+than 1.1 million characters.
+
+████ Architecture and   ████████████████████████████████████████████████████████████████████████████
+████ terminology        ████████████████████████████████████████████████████████████████████████████
+
+━━━┫ Codespace and code points ┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+⌘ Title 3
+
+The Unicode Standard defines a codespace:[58] a sequence of integers
+called code points[59] covering the interval [ 0 , 17 × 2 16) {\displaystyle [0,17\times 2^{16})},
+notated according to the standard as U+0000–U+10FFFF.[60] The codespace is a systematic,
+architecture-independent representation of The Unicode Standard; actual text is processed as binary
+data via one of several Unicode encodings, such as UTF-8.
+
+In this normative notation, the two-character prefix U+ always precedes a written code point,[61]
+and the code points themselves are written as hexadecimal numbers. At least four hexadecimal digits
+are always written, with leading zeros prepended as needed. For example, the code point U+00F7 ÷
+DIVISION SIGN is padded with two leading zeros, but U+13254 𓉔 EGYPTIAN HIEROGLYPH O004 () is not
+padded.[62]
+
+There are a total of 220 + (216 − 211) = 1112064 valid code points within the codespace. (This
+number arises from the limitations of the UTF-16 character encoding, which can encode the 216 code
+points in the range U+0000 through U+FFFF except for the 211 code points in the range U+D800 through
+U+DFFF, which are used as surrogate pairs to encode the 220 code points in the range U+10000 through
+U+10FFFF.)
+
+████████████████████████████████████████ Centered  █████████████████████████████████████████████████
+████████████████████████████████████████  title    █████████████████████████████████████████████████
+
+Section text
+Section text
+Section text
+
+███ Three ██████████████████████████████████████████████████████████████████████████████████████████
+███ line  ██████████████████████████████████████████████████████████████████████████████████████████
+███ title ██████████████████████████████████████████████████████████████████████████████████████████
+
+Section text
+Section text
+Section text
+
+
+━━━┫ Very very very very very very very very very  ┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   ┃ very very very very very  very long title     ┃
+
+Section text
+Section text
+Section text
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+Don't like
+
+━━━┫ Two lines ┃
+   ┃ title     ┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+━━━┫ Very very very very very very very very very very very very very very  very long title ┣━━━━━━━

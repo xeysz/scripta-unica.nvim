@@ -1,0 +1,46 @@
+#scripta-unica
+
+:: Formatting
+  2024-04-03 Left align
+  2024-04-03 Right align
+  2024-04-03 Center align
+  2024-03-31 Toggle h1
+  2024-03-31 Toggle h2
+  2024-04-03 Toggle h3
+  2024-04-13 Change alignment of existing h1
+  2024-04-13 Change alignment of existing h2
+  2024-04-13 Change alignment of existing h3
+  2024-04-09 Underline
+  2024-03-31 Insert date at cursor (normal and insert mode)
+  2024-03-31 Toggle todo for each state (pending, done, important, unknown)
+  2024-02-13 Toggle quote
+  2024-02-13 Toggle code
+  2024-03-19 Insert divider
+  2024-03-19 Insert today's date using "date" command
+  2024-02-13 CSV to unicode table and back
+  2024-03-31 Cycle todo state (none, pending, done)
+
+:: Reporting
+  2024-02-13 List all todo based on marker for Telescope neovim
+  2024-02-14 List all todo based on marker for fish shell
+  2024-02-13 Generate project journal based on #project/NAME and a date marker
+  2024-02-13 Create graphs based on a list of #tags
+
+:: NVIM extras
+  2024-04-13 Ensure formatting with `gq` works with different types of markers
+  2024-02-14 Follow links
+  2024-02-14 Autocomplete links with other entries
+  2024-02-14 embed images using imgcat
+  2024-02-13 Inline embedding of text files from [[code.rs]]
+  2024-02-13 Inline image embedding from [[someimage.png]]
+  2024-02-13 Inline video thumbnail embedding from [[something.mp4]]
+
+:: External tools
+  2024-02-14 Linter? Help find issues with list numbering inconsistencies
+  2024-02-13 Import emails to entries with date and auto-quote
+  2024-02-13 Import URLs as PDF printouts (or html?) for local archiving
+  2024-02-14 Batch formatting tool
+  2024-04-13 Task cache for faster/consistent searches
+  2024-04-13 Companion language server protocol tool
+  2024-04-09 Write or find a library that does what https://yaytext.com does
+
