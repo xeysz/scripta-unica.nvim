@@ -237,5 +237,23 @@ function M.remove_h3(start_line, end_line)
     vim.api.nvim_buf_set_lines(0, start_line-1, end_line, false, lines)
 end
 
+function M.todo_cycle(start_line, end_line)
+    local states = { "", "", }
+
+    local lines = vim.api.nvim_buf_get_lines(0, start_line-1, end_line, false)
+    for i, line in ipairs(lines) do
+        local state_chars = table.concat(states, "|")
+        if not line:match("^%s*["..state_chars.."]") then
+            line = states[1] .. "  " .. line
+        else
+            local from_states = table.concat(states, "")
+            local to_states   = table.concat(states, "", 2) .. " "
+            line = vim.fn.tr(line, from_states, to_states)
+        end
+        lines[i] = vim.fn.trim(line)
+    end
+    vim.api.nvim_buf_set_lines(0, start_line-1, end_line, false, lines)
+end
+
 return M
 

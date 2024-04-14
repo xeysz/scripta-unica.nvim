@@ -54,6 +54,14 @@ vim.api.nvim_create_user_command(
 )
 
 vim.api.nvim_create_user_command(
+    'UnicaTodoCycle',
+    function(opts)
+        unica.todo_cycle(opts.line1, opts.line2)
+    end,
+    {range = true, nargs = 0}
+)
+
+vim.api.nvim_create_user_command(
     'UnicaDiv',
     function()
         unica.insert_div()

@@ -19,6 +19,7 @@ end
 -- XXX: This function description is terribly vague
 local function col_count(str)
     -- XXX: This approach does NOT handle tabs appropriately
+    -- TODO: Explore strchars instead of this
     -- #self.str-1 gives us effectively the last byte in the string because lua doesn't parse multibyte
     -- characters
     -- We have to add 1 because charidx index starts at 0
