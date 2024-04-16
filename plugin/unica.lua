@@ -2,15 +2,6 @@ local vim = vim
 
 local unica = require('unica')
 
--- There's probably a better way to do this .ftspec?
-vim.api.nvim_create_autocmd({"BufRead", "BufNewFile"}, {
-    pattern = "*.unica",
-    callback = function()
-        vim.opt.syntax = "txt"
-        vim.opt.textwidth = 100
-    end
-})
-
 vim.api.nvim_create_user_command(
     'UnicaH1',
     function(opts)

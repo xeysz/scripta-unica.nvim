@@ -2,6 +2,12 @@ local vim = vim
 local Line = require('unica.line')
 
 local M = {}
+local settings = {}
+
+function M.setup(user_settings)
+    -- TODO: should override settings with user_settings instead of completely assigning
+    settings = user_settings
+end
 
 function M.insert_div()
     local textwidth = vim.api.nvim_buf_get_option(0, 'textwidth')
