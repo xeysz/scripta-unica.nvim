@@ -1,15 +1,15 @@
 local vim = vim
 local Line = require('unica.line')
 
-local M = {}
+local unica = {}
 local settings = {}
 
-function M.setup(user_settings)
+function unica.setup(user_settings)
     -- TODO: should override settings with user_settings instead of completely assigning
     settings = user_settings
 end
 
-function M.insert_div()
+function unica.insert_div()
     local textwidth = vim.api.nvim_buf_get_option(0, 'textwidth')
 
     local equals_line = string.rep("─", textwidth)
@@ -17,7 +17,7 @@ function M.insert_div()
     vim.api.nvim_buf_set_lines(0, row - 1, row - 1, false, {equals_line})
 end
 
-function M.align_left(start_line, end_line)
+function unica.align_left(start_line, end_line)
     local lines = vim.api.nvim_buf_get_lines(0, start_line-1, end_line, false)
     for i, str in ipairs(lines) do
         local line = Line:new(str)
@@ -27,7 +27,7 @@ function M.align_left(start_line, end_line)
     vim.api.nvim_buf_set_lines(0, start_line-1, end_line, false, lines)
 end
 
-function M.align_right(start_line, end_line)
+function unica.align_right(start_line, end_line)
     local width = vim.bo.textwidth
 
     local lines = vim.api.nvim_buf_get_lines(0, start_line-1, end_line, false)
@@ -40,7 +40,7 @@ function M.align_right(start_line, end_line)
     vim.api.nvim_buf_set_lines(0, start_line-1, end_line, false, lines)
 end
 
-function M.align_center(start_line, end_line)
+function unica.align_center(start_line, end_line)
     local width = vim.bo.textwidth
     local padding_char = " "
 
@@ -60,18 +60,18 @@ function M.align_center(start_line, end_line)
     vim.api.nvim_buf_set_lines(0, start_line-1, end_line, false, lines)
 end
 
-function M.toggle_h1(start_line, end_line, align)
+function unica.toggle_h1(start_line, end_line, align)
     local pad_chr = "█"
     local lines = vim.api.nvim_buf_get_lines(0, start_line-1, start_line, false)
     local str = lines[1]
     if string.match(str, "^" .. pad_chr) then
-        M.remove_h1(start_line, end_line)
+        unica.remove_h1(start_line, end_line)
     else
-        M.insert_h1(start_line, end_line, align)
+        unica.insert_h1(start_line, end_line, align)
     end
 end
 
-function M.insert_h1(start_line, end_line, align)
+function unica.insert_h1(start_line, end_line, align)
     local prepend_text = "█"
     local append_text = "█"
     local pad_chr = "█"
@@ -106,7 +106,7 @@ function M.insert_h1(start_line, end_line, align)
     vim.api.nvim_buf_set_lines(0, start_line-1, end_line, false, vimlines)
 end
 
-function M.remove_h1(start_line, end_line)
+function unica.remove_h1(start_line, end_line)
     local prepend_text = "█"
     local append_text = "█"
     local pad_chr = "█"
@@ -125,19 +125,19 @@ function M.remove_h1(start_line, end_line)
     vim.api.nvim_buf_set_lines(0, start_line-1, end_line, false, vimlines)
 end
 
-function M.toggle_h2(start_line, end_line, align)
+function unica.toggle_h2(start_line, end_line, align)
     local pad_chr = "━"
     local outline_text = "┃"
     local lines = vim.api.nvim_buf_get_lines(0, start_line-1, start_line, false)
     local str = lines[1]
     if str:match("^" .. pad_chr) or str:match("^%s*" .. outline_text) then
-        M.remove_h2(start_line, end_line)
+        unica.remove_h2(start_line, end_line)
     else
-        M.insert_h2(start_line, end_line, align)
+        unica.insert_h2(start_line, end_line, align)
     end
 end
 
-function M.insert_h2(start_line, end_line, align)
+function unica.insert_h2(start_line, end_line, align)
     local prepend_text = "┫"
     local append_text = "┣"
     local pad_chr = "━"
@@ -180,7 +180,7 @@ function M.insert_h2(start_line, end_line, align)
     vim.api.nvim_buf_set_lines(0, start_line-1, end_line, false, vimlines)
 end
 
-function M.remove_h2(start_line, end_line)
+function unica.remove_h2(start_line, end_line)
     local prepend_text = "┫"
     local append_text = "┣"
     local outline_text = "┃"
@@ -203,18 +203,18 @@ end
 
 -- XXX: This is a very simple probe. If the first character matches, then we assume it is currently
 -- a valid h3 and proceed to attempt to remove it from the rest of the lines. Otherwise we insert_h3
-function M.toggle_h3(start_line, end_line, align)
-    local prepend_text = "⌘ "
+function unica.toggle_h3(start_line, end_line, align)
+    local prepend_text = "⌘"
     local lines = vim.api.nvim_buf_get_lines(0, start_line-1, start_line, false)
     local str = lines[1]
     if string.match(str, "^" .. prepend_text) then
-        M.remove_h3(start_line, end_line)
+        unica.remove_h3(start_line, end_line)
     else
-        M.insert_h3(start_line, end_line, align)
+        unica.insert_h3(start_line, end_line, align)
     end
 end
 
-function M.insert_h3(start_line, end_line, align)
+function unica.insert_h3(start_line, end_line, align)
     local prepend_text = "⌘ "
     local lines = vim.api.nvim_buf_get_lines(0, start_line-1, end_line, false)
     for i, str in ipairs(lines) do
@@ -225,8 +225,8 @@ function M.insert_h3(start_line, end_line, align)
     vim.api.nvim_buf_set_lines(0, start_line-1, end_line, false, lines)
 end
 
-function M.remove_h3(start_line, end_line)
-    local prepend_text = "⌘ "
+function unica.remove_h3(start_line, end_line)
+    local prepend_text = "⌘"
     local lines = vim.api.nvim_buf_get_lines(0, start_line-1, end_line, false)
     for i, str in ipairs(lines) do
         str = str:gsub("^"..prepend_text, "")
@@ -237,7 +237,7 @@ function M.remove_h3(start_line, end_line)
     vim.api.nvim_buf_set_lines(0, start_line-1, end_line, false, lines)
 end
 
-function M.todo_cycle(start_line, end_line)
+function unica.todo_cycle(start_line, end_line)
     local states = { "", "", }
 
     local lines = vim.api.nvim_buf_get_lines(0, start_line-1, end_line, false)
@@ -255,5 +255,5 @@ function M.todo_cycle(start_line, end_line)
     vim.api.nvim_buf_set_lines(0, start_line-1, end_line, false, lines)
 end
 
-return M
+return unica
 
