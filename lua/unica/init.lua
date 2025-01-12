@@ -46,7 +46,7 @@ function unica.align_center(start_line, end_line)
 
     local lines = vim.api.nvim_buf_get_lines(0, start_line-1, end_line, false)
     for i, str in ipairs(lines) do
-        line = Line:new(str)
+        local line = Line:new(str)
         line:trim()
         if line.len < width then
             local pad = width - line.len
