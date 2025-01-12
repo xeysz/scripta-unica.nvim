@@ -51,8 +51,9 @@ function Line:pad_left(width, chr)
     local padding_len = width - self.len
     if padding_len >= 0 then
         local padding = string.rep(chr, padding_len)
-        self.str = padding..self.str
-        self:update_len()
+        self:prepend(padding)
+        --self.str = padding..self.str
+        --self:update_len()
     end
 end
 
@@ -60,8 +61,9 @@ function Line:pad_right(width, chr)
     local padding_len = width - self.len
     if padding_len >= 0 then
         local padding = string.rep(chr, padding_len)
-        self.str = self.str..padding
-        self:update_len()
+        self:append(padding)
+        --self.str = self.str..padding
+        --self:update_len()
     end
 end
 
